@@ -18,7 +18,7 @@ This sample demonstrates how to integrate and customize the Syncfusion [Blazor A
 - Includes external navigation links for Demos, Forums, and Upgrade Guide resources.
 - Embeds a search input element inside the AppBar layout.
 - Demonstrates custom styling through the `ralign` and `prominent-appbar` CSS classes.
-- Includes optional prominent AppBar configuration through the commented `Mode="AppBarMode.Prominent"` setting.
+- Includes optional prominent AppBar configuration through the commented `Mode="AppBarMode.Prominent` setting.
 
 ## Prerequisites
 
