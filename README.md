@@ -1,53 +1,65 @@
 # Getting Started with the Blazor AppBar Component
 
-**Repository Description**  
-This repository contains a quick‑start Blazor WebAssembly sample that demonstrates how to integrate and customize the Syncfusion Blazor AppBar component in a Blazor application.
+## Overview
 
-A quick‑start project that helps you get started with the Syncfusion AppBar component in a Blazor WebAssembly app. The sample includes example code to change the AppBar size, color, position, and overall design to match different layout requirements.
+This sample demonstrates how to integrate and customize the Syncfusion [Blazor AppBar](https://www.syncfusion.com/blazor-components/blazor-appbar) component in a Blazor WebAssembly application. The implementation showcases a navigation header with menu actions, embedded search functionality, external navigation links, layout spacing controls, and custom styling options. It also demonstrates how AppBar positioning, color themes, and button interactions can be configured to create a responsive application toolbar experience.
 
-## Project Overview
-This project is designed to introduce developers to the Syncfusion Blazor AppBar component and its basic configuration options. It focuses on building a responsive application header using the AppBar component in a Blazor WebAssembly environment.
+## Key Features
 
-## Features
-- Integration of Syncfusion Blazor AppBar component  
-- Customize AppBar size, color, and position  
-- Modify AppBar layout and visual design  
-- Ready‑to‑run Blazor WebAssembly sample  
+- Uses the `SfAppBar` component to create the application toolbar.
+- Configures AppBar appearance with `ColorMode`and positions the AppBar using `Position`.
+- Integrates Syncfusion buttons through the `SfButton` component.
+- Displays a menu button using `IconCss="e-icons e-menu"`.
+- Uses `AppBarSpacer` to align content within the AppBar.
+- Uses `AppBarSeparator` to visually separate toolbar items.
+- Implements event handling through the `OnClick` event.
+- Uses Blazor `NavigationManager` for programmatic navigation.
+- Navigates users to the Syncfusion download page from the Free Trial button.
+- Includes external navigation links for Demos, Forums, and Upgrade Guide resources.
+- Embeds a search input element inside the AppBar layout.
+- Demonstrates custom styling through the `ralign` and `prominent-appbar` CSS classes.
+- Includes optional prominent AppBar configuration through the commented `Mode="AppBarMode.Prominent"` setting.
 
 ## Prerequisites
-- Visual Studio 2022  
-- .NET SDK 6.0 or later  
 
-## Installation and Running the Application
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) compatible with the project's target framework
+
+## How to Run the Project
+
+**Visual Studio 2022**
+
 1. Clone the repository.
+2. Open the `MyBlazorApp.sln` solution.
+3. Restore all NuGet packages.
+4. Set the startup project to `MyBlazorApp`.
+5. Build the solution.
+6. Run the application using `Ctrl+F5`.
+
+**Visual Studio Code**
+
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the project directory.
 ```bash
-git clone https://github.com/SyncfusionExamples/getting-started-with-the-blazor-appbar-component.git
+dotnet restore
+dotnet run
 ```
-2. Open the project in Visual Studio .
-3. Restore required packages.
-4. Build and run the project to view the AppBar component in action.
 
-## Documentation
-- General Syncfusion documentation:  
-  https://help.syncfusion.com/
-- Blazor Introduction:  
-  https://blazor.syncfusion.com/documentation/introduction
-- Blazor AppBar Getting Started:  
-  https://blazor.syncfusion.com/documentation/appbar/getting-started
+4. Open the local application URL displayed in the terminal after the application starts.
 
-## Online Demo
-- Blazor AppBar demo:  
-  https://blazor.syncfusion.com/demos/appbar/default-functionalities?theme=fluent
+## Project Structure
 
-## Video Resource
-- Getting started with Blazor WebAssembly and Syncfusion components:  
-  https://www.youtube.com/watch?v=zKU580cOqjg
+- `Pages/Index.razor` — Main sample page demonstrating the Syncfusion Blazor AppBar component, button interactions, navigation links, search input integration, layout elements, and custom styling.
 
-## Troubleshooting
-- Ensure the correct .NET SDK version is installed.
-- Restore NuGet packages if dependencies are missing.
-- Rebuild the project if UI changes are not reflected.
-- Check browser console logs for runtime errors.
+- `MyBlazorApp.sln` — Solution file for the sample application.
 
-## Support
-For usage guidance and API references, refer to the Syncfusion documentation links provided above.
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+- For implementation details, see the [relevant official Syncfusion documentation](https://blazor.syncfusion.com/documentation/appbar/getting-started).
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
